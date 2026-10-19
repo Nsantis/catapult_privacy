@@ -13,10 +13,17 @@
   .hero h1 { margin:0; }
   .shots { display:grid; grid-template-columns:1fr; gap:12px; margin:16px 0 8px; }
   .shots img { width:100%; border-radius:12px; box-shadow:0 2px 10px rgba(0,0,0,.2); }
+  @media (min-width: 640px) { .shots { grid-template-columns: 1fr 1fr; } .shots img:first-child { grid-column: 1 / -1; } }
 </style>
 </head>
 <body>
 <div class="hero"><img src="icon.png" alt="Age of Catapults app icon"><h1>Age of Catapults — Support</h1></div>
+<div class="shots">
+  <img src="shot-title.jpg" alt="Title screen with the Nordic levels">
+  <img src="shot-siege.jpg" alt="A tower toppling after a hit">
+  <img src="shot-aim.jpg" alt="The catapult with its dotted aiming arc">
+</div>
+
 <p>Age of Catapults (<i lang="fi">Katapulttien aikakausi</i>) is an ad-free physics siege game for iPhone and iPad, made by Nuutti Santaniemi in Finland.</p>
 <p>Questions, problems or ideas? E-mail <a href="mailto:n.santaniemi@gmail.com">n.santaniemi@gmail.com</a>. Please tell which device and iOS version you use.</p>
 <h2>Common questions</h2>
